@@ -1,16 +1,96 @@
-
-  body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.input{
-    margin: 10px;
-    padding: 10px;
-     
-}
-.input:hover{
-    background-color: cornflowerblue;
-}
-
-input:focus{
-    background-color: rosybrown;
-}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crear tu cuenta</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/forms.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="brand-link">
+                <img src="images/logo.png" alt="logo" width="60px" />
+                <h1 class="brand">EGAME</h1>
+            </a>
+            <ul class="main-header-menu-left">
+                <li>
+                    <a href="#">
+                        Nosotros
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Videojuegos
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contáctenos
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-header-menu-right">
+                <li>
+                    <a href="/iniciar-sesion">
+                        <button title="Login" class="btn-standard"><i class="fa fa-sign-in-alt"></i>Acceder</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="/carrito" title="Carrito" class="btn-standard" ><i class="fa fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+            <a href="#" class="navbar__burger">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-signup">
+            <form action="/" method="POST" class="create-form">
+                <h1>REGISTRATE</h1><br><br>
+                <div class="control-form">
+                    <label for="usuario"><strong>Usuario</strong></label>
+                    <br>
+                    <input type="text" name="usuario" id="usuario" class="control" minlength="6" required>
+                </div>
+                <div class="control-form">
+                    <label for="usuario"><strong>Correo Electrónico</strong></label>
+                    <br>
+                    <input type="email" name="email" id="email" class="control" minlength="6" required>
+                </div>
+                <div class="control-form">
+                    <label for="pass1"><strong>Contraseña</strong></label>
+                    <br>
+                    <input type="password" name="pass1" id="pass1" class="control" minlength="8" required>
+                </div>
+                <div class="control-form">
+                    <label for="pass2"><strong>Confirma tu contraseña</strong></label>
+                    <br>
+                    <input type="password" name="pass2" id="pass2" class="control" minlength="8" required>
+                </div>
+                <div class="control-form">
+                    <div class="check-form">
+                        <input type="checkbox" name="categoria" id="check-terminos" class="check" required>
+                        <label for="check-terminos">Acepto los Términos y Condiciones</label>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <a href="/iniciar-sesion">
+                        <button type="submit" class="btn-form">CONTINUAR</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <i class="fa fa-copyright"></i> EGAME 2021, Todos los derechos reservados.
+        </section>
+    </footer>
+</body>
+</html>

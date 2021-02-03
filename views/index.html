@@ -2,48 +2,63 @@
 <html lang="en">
     <head>
         <meta charser="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Tu tienda </title>
-        <meta name="vierport" content="width=device-width, instal-scale=10%" >
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel= "stylesheet">
-        <link rel="stylesheet" href="styles.css"  type="text/html">
-    </head>
-<body>
-<header class="site-header">
-    <div class="header-content">
-        <div class="top-header">
-            <img src="/static/images/logo-mercado-liebre.svg"> 
-            <form>
-                <input type="search" placeholder="Buscar...">
-                <button><i class="fas fa-search"></i></button>
-              </form>
-              <p>
-                <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
-              </p>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="/" class="brand-link">
+                <img class="logo" src="/static/images/logo-mercado-liebre.svg" alt="aqui va el logo">
+                </a>
+            <p class="titulo1">Comprá en cuotas y sin tarjeta de crédito</p>
+    <main>    
+        <section class="navbar">
+            <div class="banner__arrow banner__arrow_left">
+                <i class="fas fa-arrow-alt-circle-left"></i>
+            </div>
+            <a href="/" class="brand-link"></a>
+            <img class="navbar" src="/static/images/img-home-banner.jpg">
+
+        <ul class="main-heder-menu-left">
+            <a href="/registro">
+                <button title="Login" class="btn-standard"><i class="fa fa-sign-in-alt"></i>Registro</button>
+            </a>
+            <a href="/login">
+                <button title="Login" class="btn-standard"><i class="fa fa-sign-in-alt"></i>iniciar seccion</button>
+            </a>
+            <li>
+                <a href="/carrito" title="Carrito" class="btn-standard" ><i class="fa fa-shopping-cart"></i></a>
+            </li>
+        </ul>
+        <ul class="main-heder-menu-left">
+            <a href="/ofertas">
+                <button title="Login" class="btn-standard"></i>Ofertas</button>
+            </a>
+            <a href="/tiendas-oficiales">
+                <button title="Login" class="btn-standard"></i>Tiendas oficiales</button>
+            </a>
+            <a href="/vender">
+                <button title="Login" class="btn-standard"></i>Vender</button>
+            </a>
+            <a href="/ayuda">
+                <button title="Login" class="btn-standard"></i>Ayuda</button>
+            </a>
+            
+        </ul>
+            <div class="search-bar"><input type="search" placeholder="Buscar"><button><i class="fas fa-search"></i></button></div>
+            
+        <a href="#" class="navbar__burger">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
 <header>
     <main>
-        <section class = "caja">
-            <h3 class = "titulo">Menu</h3>
-                <img src="/static/images/img-home-banner.jpg" width="80%" alt="TV smart">
-        </section>
-    </main>
-</header>
-    </div>
-        <nav class="header-navbar">
-          <ul class="menu-navbar">
-            <li>Ofertas</li>
-            <li>Tiendas Oficiales</li>
-            <li>Vender</li>
-            <li>Ayuda</li>
-          </ul>
-        <ul class="user-navbar">
-            <li><a href="/registro">Creá tu cuenta <i class="far fa-id-card"></a></i></li>
-            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></a></i></li>
-            <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
-            </ul>
-         
-    <header>
-    <main>
-        <section class = "flex-container">
+       
             <h3 class = "titulo">Ofertas</h3>
             <img src="/static/images/img-cafetera-moulinex.jpg" width="25%" alt="Ofetas">
             <p class = "">• Jarra en vidrio</p>
